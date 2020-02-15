@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView_conn_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MQTT连接设置：" />
+
+    <TextView
+        android:id="@+id/textView_broker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MQTT服务器：" />
+
+    <EditText
+        android:id="@+id/editText_broker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="www.sjaiedu.com" />
+
+    <TextView
+        android:id="@+id/textView_pub_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布消息" />
+
+    <EditText
+        android:id="@+id/editText_pub_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="/car/direction" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接MQTT" />
+
+    <TextView
+        android:id="@+id/text_receive_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提示信息：" />
+</LinearLayout>
